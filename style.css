@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: blue;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-color: #faebd7;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+    margin-left: 18%;
+}
+.logo{
+    max-height: 100px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: orangered;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: orangered;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 50;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: orangered;
+    border: 2px solid orangered;
+}
+.btn:hover{
+    background: transparent;
+    border-color: orangered;
+    color: orangered;
+}
+.content{
+    position: absolute;
+    top: 28%;
+    left: 3%;
+}
+.content .title{
+    color: darkolivegreen;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    display: inline-flex;
+    margin-bottom: 20px;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    background-clip: text;
+    background-color: transparent;
+}
+.content h1{
+    color: #1f1f25;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: inherit;
+    width: 70%;
+    text-align: justify;
+}
+.content h1 span{
+    color: rgb(228, 91, 17);
+}
+.content p{
+    width: 55%;
+    color: #757575;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.images img{
+    height: 95%;
+    position: absolute;
+    left: 75%;
+    bottom: 0;
+    transform: translatex(-50%);
+    transition: bottom 1.3s, left 1.3s;
+}
+.images:hover .shape{
+    bottom: 23px;
+}
+
+.images:hover .Man{
+    left: 60%;
+}
+.social{
+    margin-left: 28%;
+    margin-top: 32%;
+}
+.social a{
+    font-size: 28px;
+    color: #606163;
+    margin-right: 20px;
+}
+.social a:hover{
+    color: rgb(0, 30, 255);
+}
